@@ -1,0 +1,162 @@
+﻿/* ===== Headings ===== */
+.main-heading {
+    text-align: center;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 2rem;
+}
+
+.sub-heading {
+    text-align: center;
+    color: #555;
+    margin-bottom: 25px;
+    font-size: 1.2rem;
+}
+
+/* ===== Cart Button ===== */
+.cart-button {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+    .cart-button .btn-primary {
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+        .cart-button .btn-primary:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+/* ===== Products List ===== */
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+/* Product Box */
+.product-box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+    width: 200px; /* fixed width */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .product-box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
+
+/* Product Image */
+.product-img {
+    width: 150px; /* fixed width */
+    height: 150px; /* fixed height */
+    object-fit: cover; /* keeps aspect ratio, crops if needed */
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+
+/* Product Labels */
+.product-details .product-label {
+    display: block;
+    font-weight: 600;
+    color: #666;
+    margin-top: 10px;
+}
+
+.product-details .product-text {
+    display: block;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+/* Product Buttons */
+.product-buttons {
+    margin-top: 15px;
+}
+
+    .product-buttons .btn-view,
+    .product-buttons .btn-add {
+        display: inline-block;
+        margin: 5px 5px 0 5px;
+        padding: 6px 12px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-size: 0.9rem;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        border: none;
+    }
+
+    .product-buttons .btn-view {
+        background-color: #17a2b8;
+        color: #fff;
+    }
+
+        .product-buttons .btn-view:hover {
+            background-color: #117a8b;
+        }
+
+    .product-buttons .btn-add {
+        background-color: #28a745;
+        color: #fff;
+    }
+
+        .product-buttons .btn-add:hover {
+            background-color: #218838;
+        }
+
+/* ===== Pagination Buttons ===== */
+.pagination-buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    margin-top: 30px;
+}
+
+    .pagination-buttons .btn-page {
+        text-decoration: none;
+        background: #007bff;
+        color: #fff;
+        padding: 8px 18px;
+        border-radius: 6px;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+
+        .pagination-buttons .btn-page:hover {
+            background: #0056b3;
+        }
+
+/* ===== Responsive Design ===== */
+@media screen and (max-width: 768px) {
+    .products-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-box {
+        width: 80%;
+    }
+
+    .product-img {
+        width: 10%;
+        height: auto;
+    }
+}
